@@ -1,6 +1,7 @@
 import { schema } from './schema';
 import { ApolloServer } from 'apollo-server';
 require('dotenv').config()
+require('./database')
 
 const server = new ApolloServer({ schema });
 
