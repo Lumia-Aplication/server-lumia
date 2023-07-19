@@ -4,7 +4,6 @@ require('dotenv').config()
 export default {
   Mutation: {
     authLogin: async (_: undefined, { code }: { code: string }) => {
-
       const tokenResponseData = await request('https://discord.com/api/oauth2/token', {
 				method: 'POST',
 				body: new URLSearchParams({
@@ -29,7 +28,6 @@ export default {
       });
 
       const user = await response.body.json();
-      
       return {
         user,
       };
