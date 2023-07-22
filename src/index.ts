@@ -1,9 +1,11 @@
 import { schema } from './schema';
+import { context } from './context'
 import { ApolloServer } from 'apollo-server';
-require('dotenv').config()
-require('./database')
+import * as modules from './modules'
 
-const server = new ApolloServer({ schema });
+modules
+
+const server = new ApolloServer({ schema, context });
 
 server
   .listen({ port: process.env.SERVER_PORT })
