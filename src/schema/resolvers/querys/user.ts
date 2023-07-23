@@ -1,10 +1,8 @@
-import { type Client } from 'discord.js';
-
-import { type Models } from '../../../types';
+import { type Context } from '../../../types';
 
 export default {
     Query: {
-        user: async (_: unknown, { id }: { id: string }, { models, client }: { models: Models, client: Client }) => {
+        user: async (_: unknown, { id }: { id: string }, { models, client }: Pick<Context, "models" | "client"> ) => {
             const { User } = models;
             const usersClient = client.users.cache.get(id)
 

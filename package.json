@@ -33,7 +33,6 @@
     "graphql": "^16.7.1",
     "graphql-tools": "^9.0.0",
     "mongoose": "^7.3.4",
-    "undici": "^5.22.1",
-    "webpack-node-externals": "^3.0.0"
+    "undici": "^5.22.1"
   }
 }

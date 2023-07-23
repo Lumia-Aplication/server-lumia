@@ -1,5 +1,5 @@
 import { type Model } from 'mongoose'
-
+import { Client } from 'discord.js';
 export interface IGuild extends Document {
     guildId: string;
     prefix: string;
@@ -25,4 +25,9 @@ export interface InputPrefix {
 export interface InputLang {
     lang: string;
     id: string;
+}
+
+export interface Context {
+    models: Models;
+    client: Client;
 }
