@@ -1,0 +1,4 @@
+input inputLang {
+    id: String!
+    lang: String!
+}

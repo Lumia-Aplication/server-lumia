@@ -1,0 +1,6 @@
+type Guild {
+  guildId: String!
+  prefix: String
+  usages: Int
+  lastReset: Int
+}

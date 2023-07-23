@@ -1,3 +1,4 @@
 type Query {
-  ping: String!
+  guild(id: String!): Guild
+  user(id: String!): User
 }

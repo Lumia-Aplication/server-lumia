@@ -1,0 +1,4 @@
+input inputPrefix {
+    id: String!
+    prefix: String!
+}
