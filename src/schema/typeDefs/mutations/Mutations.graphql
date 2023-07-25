@@ -3,4 +3,5 @@ type Mutation {
     changeLang(input: inputLang!): User
     changePrefix(input: inputPrefix!): Guild
     usages(id: String!): Guild
+    receiveCommands(input: [inputCommands]): [Commands]
 }

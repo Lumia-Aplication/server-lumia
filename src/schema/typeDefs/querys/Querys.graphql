@@ -1,4 +1,5 @@
 type Query {
   guild(id: String!): Guild
   user(id: String!): User
+  commands: [Commands]
 }

@@ -1,0 +1,7 @@
+type Commands {
+    name: String!
+    category: String!
+    description: String
+    aliases: [String]
+    use: String
+}
